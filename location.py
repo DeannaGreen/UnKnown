@@ -2,6 +2,7 @@ from flask import Flask , render_template,request
 import requests
 import json
 import flask
+import os
 
 app = Flask("MyApp")
 
@@ -53,5 +54,5 @@ def calculate_distance(startcoord, endcoord):
 	return -1
 	
 	
-
-app.run(debug=False,host = '0.0.0.0')
+port = int(os.environ.get("PORT", 5000))
+app.run(debug=False,host = '0.0.0.0', port=port)
