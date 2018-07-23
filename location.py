@@ -7,7 +7,7 @@ app = Flask("MyApp")
 
 @app.route("/")
 def home():
-	return render_template ("index.html") 
+	return render_template ("./templates/index.html") 
 
 @app.route("/send", methods=["POST"])
 def read_form_data():
