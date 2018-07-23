@@ -54,4 +54,4 @@ def calculate_distance(startcoord, endcoord):
 	
 	
 
-app.run(debug=True)
+app.run(debug=False,host = '0.0.0.0')
