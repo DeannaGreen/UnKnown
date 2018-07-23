@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <link href="/static/Homepage.css" rel="stylesheet">
+    <link href="/static/location.css" rel="stylesheet">
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+  
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+  <title>(Un)Known</title>
+</head>
+<body>
+  <nav class="navbar-inverse navbar-fixed-top">
+    <div class="container-fluid mx-auto">
+      <div class="navbar-header">
+        <a class="active navbar-brand " href="#">(Un)Known</a>
+      </div >
+      <ul class="nav navbar-nav">
+<!--        <li class="active"><a href="index.html"><img src="UnKnownPics/icons8-london-cab-64.png"><br>Home</a></li> -->
+        <li class="icon"><a href="towerbridge.html"><img src="./Images/london-eye (1).png"><br>London Eye</a></li>
+        <li class="icon"><a href="/towerbridge"><img src="./Images/icons8-bridge-40.png"><br>Tower Bridge</a></li>
+        <li class="icon"><a href="towerbridge.html"><img src="./Images/icons8-lettuce-48-2.png"><br>Hyde Park</a></li>
+        <li class="icon"><a href="towerbridge.html"><img src="./Images/icons8-city-100.png"><br>Canary Wharf</a></li>
+        <li class="icon"><a href="towerbridge.html"><img src="./Images/icons8-musical-notes-32.png"><br>Soho</a></li>
+        <li class="icon"><a href="towerbridge.html"><img src="./Images/icons8-cocktail-50.png"><br>Rooftops</a></li>
+        <li class="icon"><a href="(Un)Known.html#Signup"><img src="./Images/icons8-sign-up-50.png"><br>Sign Up</a></li>
+      </ul>
+    </div>
+  </nav>
+
+<script>
+var x = document.getElementById("demo");
+getLocation()
+
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+    } else { 
+        x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+}
+
+function showPosition(position) {
+  document.cookie =  "location=" + position.coords.latitude + ", " + position.coords.longitude;
+}
+</script>
