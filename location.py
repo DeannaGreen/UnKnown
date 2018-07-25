@@ -2,6 +2,7 @@ from flask import Flask , render_template,request
 import requests
 import json
 import flask
+from sendemailapi import send_simple_message
 
 app = Flask("MyApp")
 
