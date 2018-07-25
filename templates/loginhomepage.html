@@ -57,10 +57,10 @@
   <div>
     <h2>Welcome back to the (Un)Known!</h2></br></br>
     <p>Go Crazy and try out our random location selector below</p></br>
-    <div id="locationgame" >
+    <div id="locationgame" class="form-group">
       <form method="post" action="/locgame#bottom"> <!-- need to add link to location game when submit is clicked on -->
         <p>Choose a location from the above:</p></br>
-		<select name="loc_list" id="loc_list">
+		<select class="form-control" name="loc_list" id="loc_list">
 		  <option value="{{Knownplaces[0]}}" selected>{{Knownplaces[0]}}</option>
 		  {% for place in Knownplaces[1:] %}
 		    <option value="{{place}}">{{place}}</option>
