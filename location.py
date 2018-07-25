@@ -35,28 +35,6 @@ def random_location_generator(location_selector):
 		location_chosen = Knownplaces[location_selector][rand_num]
 	return location_chosen
 
-@app.route("/send", methods=["POST"])
-def read_form_data():
-	form_data = request.form 
-	startcoord =  form_data["startcoord"]
-	endcoord =  form_data["endcoord"]
-	
-	res = calculate_distance(startcoord, endcoord)
-
-	return "Time to reach location: " + str(res) + " minutes"
-
-@app.route("/sendemail", methods=["POST"])
-def read_signup_data():
-	form_data = request.form #Getting hold of a Form object that is sent from a browser.
-	name =  form_data["username"] # from the form object get the Username
-	emailto =  form_data["email"] # from the form object get the email
-	
-	emailtext = "Hello " + name + "Welcome to the (Un)Known"
-
-	send_simple_message(emailto, emailtext)
-
-	return render_template ("emailsent.html")
-
 @app.route("/southbank", methods=["GET"])
 def readlist_southbank():
 	d = [ ["Southwark Bridge at Night" ,"51.505524,-0.083599", 0,"&bull; Views of The Thames lit up at night by the bridge and monuments like the Shard<br/> &bull; Many bars and restaurants<br/> &bull; London skyline lit up<br/>", "towerbridge"], ["Globe Theatre" , "51.502831,-0.088251",0,"&bull; See where Shakespeares plays were hosted in the 1600s<br/> &bull; Plaque on the building marking its history<br/> &bull; Anchor Terrace itself is a Grade II listed building<br/>","globe"], ["Guided Tour of Globe Theatre" , "51.502831,-0.088251",0,"&bull; Experts guide you through the history of both the Shakespearean and modern Globe theatres, the building itself and renovation<br/> &bull; Tours are in English but there are complementary sheets in French, German, Spanish, Italian, Russian, Simplified Chinese and Japanese<br/> &bull; Tours take 40 minutes<br/> &bull; Audioguide is included and is available in English, French, German, Spanish, Italian, Russian, Mandarin and Japanese. Equivalent video content is available in British Sign Language with English subtitles.<br/>","modernglobe"]]
