@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="bootsrap_exercise-master/dist/css/bootstrap.css"rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+	<link href="Homepage.css" rel="stylesheet"">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  	
+<!-- <link rel="stylesheet" type="text/css" href="./location.css"> -->
+
+	<title>(Un)Known</title>
+</head>
+<body>
+	<nav class="navbar-inverse navbar-fixed-top">
+    <div class="container-fluid mx-auto">
+      <div class="navbar-header">
+        <a class="active navbar-brand " href="index.html">(Un)Known</a>
+      </div >
+      <ul class="nav navbar-nav">
+<!--        <li class="active"><a href="index.html"><img src="UnKnownPics/icons8-london-cab-64.png"><br>Home</a></li> -->
+        <li class="icon"><a href="londoneye.html"><img src="./Images/london-eye (1).png"><br>South Bank</a></li>
+        <li class="icon"><a href="towerbridge.html"><img src="./Images/icons8-bridge-40.png"><br>Tower Bridge</a></li>
+        <li class="icon"><a href="hydepark.html"><img src="./Images/icons8-lettuce-48-2.png"><br>Hyde Park</a></li>
+        <li class="icon"><a href="canarywharf.html"><img src="./Images/icons8-city-100.png"><br>Canary Wharf</a></li>
+        <li class="icon"><a href="soho.html"><img src="./Images/icons8-musical-notes-32.png"><br>Leicester Square</a></li>
+        <li class="icon"><a href="rooftops.html"><img src="./Images/icons8-cocktail-50.png"><br>Rooftops</a></li>
+        <li class="icon"><a href="./API/templates/signup.html"><img src="./Images/icons8-sign-up-50.png"><br>Sign Up</a></li>
+        <li class="icon"><a href="index.html"><img src="./Images/exitdoor.png"><br>Log Out</a></li>
+      </ul>
+    </div>
+  </nav>
+	<section id='section01' Class= 'demo'>
+		<a href="#section01"><span></span></a>
+		<div Class="UnKnownTitle">
+			<div class="new"><h1>Uncover London's...</h1></div>
+			<div class="old"><h1>(Un)Known</h1></div> 
+			<h4>We want you to know the London we know - awesome places right by landmarks you could easily miss.<br /> We’ve made a list, so you don’t have to - but sign in and share your own discoveries.</h4>
+		</div>
+	</section>
+	<section id='section02' Class= 'demo'>
+		<div Class='LondonCarousel'>
+			<div id="myCarousel" class="carousel slide" data-ride="carousel">
+			  <!-- Indicators -->
+			  <ol class="carousel-indicators">
+			    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			    <li data-target="#myCarousel" data-slide-to="1"></li>
+			    <li data-target="#myCarousel" data-slide-to="2"></li>
+			  </ol>
+			  <!-- Wrapper for slides -->
+			  <div class="carousel-inner">
+			    <div class="item active">
+			      <img src="./Images/aerial-view-ancient-architecture-672532.jpg" alt="Big Ben">
+			      <div class="carousel-caption">
+			        <h3>Big Ben</h3>
+			        <p>Always so much fun!</p>
+			      </div>
+			    </div>
+			    <div class="item">
+			      <img src="./Images/adults-airport-architectural-design-301930.jpg" alt="Sky Garden">
+			      <div class="carousel-caption">
+			        <h3>Sky Garden</h3>
+			        <p>So surreal!</p>
+			      </div>
+			    </div>
+			    <div class="item">
+			      <img src="./Images/advertisements-building-cars-34639.jpg" alt="Piccadilly Circus">
+			      <div class="carousel-caption">
+			        <h3>Piccadilly Circus</h3>
+			        <p>The big apple of London!</p>
+			      </div>
+			    </div>
+			  </div>
+				 <!-- Left and right controls -->
+				<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+				   <span class="glyphicon glyphicon-chevron-left"></span>
+				   <span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control" href="#myCarousel" data-slide="next">
+				   <span class="glyphicon glyphicon-chevron-right"></span>
+				   <span class="sr-only">Next</span>
+				</a>
+			</div>
+		</div>
+	</section>
+<section id='loginwelcome'>
+  <div>
+    <h2>Welcome back to the (Un)Known!</h2></br></br>
+    <p>Why not try out the <b> {{location_chosen}} </b></p></br>
+
+  </div>
+</section>
+</body>
+</html>

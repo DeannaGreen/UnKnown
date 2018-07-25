@@ -1,0 +1,37 @@
+{% include 'header.html' %}
+
+
+  <div id="page_title">
+    <br></br>
+    <br></br>
+    <h1>Canary Wharf</h1>
+    <h2>All these locations are within 1 mile of Canary Wharf</h2>
+  </div>
+  <br></br>
+
+  {% for result in list %}  
+  <div class='polaroid-images'>
+
+    <div class="row">
+      <div class="col-md-4 col-sm-12">
+        <a  href="#myModal" title="{{result[0]}}" data-toggle="modal" ><img id="myImg" src="./static/Images/towerbridge.jpg" alt="{{result[0]}}" style="width:100%;max-width:300px"></a>
+
+      </div>
+      <div class="col-md-6 col-sm-12">
+        <h2>{{result[0]}}</h2>
+        <h3>Distance from your current location ({{result[2]}} Min Away)</h3>
+        <div class="stars">
+          <img src="/static/Images/star.png">
+          <img src="/static/Images/star.png">
+          <img src="/static/Images/star.png">
+          <p>(67 Reviews)</p>
+        </div>
+        <p>{{result[3]|safe}}</p>
+      </div>
+    </div>
+  </div>
+
+  {% endfor %}
+
+  
+</body>

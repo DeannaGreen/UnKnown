@@ -1,0 +1,43 @@
+{% include 'header.html' %}
+
+	<body>
+
+	<header>
+    	<div class="container">
+        <h1 class="logo">Find Location Distance</h1>
+        <strong><nav>
+          <ul class="menu">
+            <li><a href="{{url_for('home')}}">Home</a></li>
+          </ul>
+        </nav></strong>
+      </div>
+    </header>
+
+    <div class="home">
+		<h2 class="logo">Calculate Distance</p>
+		<div id="contact-form" >
+			<form method="post" action="/send">
+				<label for="text">Please Enter Your Start Location:</label>
+				<input type="text" id="startcoord" name="startcoord" required="required" value="51.525246,0.084672">
+				<label for="text">Please Enter Your End Location:</label>
+				<input type="text" id="endcoord" name="endcoord" required="required" value="51.559098,0.074503">
+				<input type="submit" value="Submit" id="submit"/>
+			</form>
+		</div>
+	</div>
+
+
+
+		<!--P> Example 2: To post a form with email & name to backend webserver/python code </p>
+		 <div id="contact-form">
+		 	<form method="post" action="/signup">
+		 		<label for="text">Please Enter Your email:</label>
+		 		<input type="text" id="name" name="name" required="required">
+		 		<input type="text" id="email" name="email" required="required">
+		 		<input type="submit" value="Submit" id="submit"/>
+		 	</form>
+		 </div-->
+
+
+	</body> 
+</html>

@@ -1,0 +1,194 @@
+body {
+  /*background: url(./map_purple.jpg);*/
+  background: rgba(0,0,0,0.80);
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  text-align: center;
+}
+
+#section03 {
+  margin-top: 100px;
+  height: 500px;
+  width: 100%;
+ /*background: rgba(0,0,0,0.5);*/
+  padding-top: 30px;
+}
+
+.row {
+  padding-top: 10px;
+
+}
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,100,700,500);
+
+#section03 {
+  padding-top: 30px;
+  color:#666666;
+  font-family: 'Roboto', sans-serif;
+  font-weight:100;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  height: 575px;
+  width: 100%;
+  /*background: rgba(0,0,0,0.5);*/
+}
+.margin{
+    height: 400px;
+}
+.panel {
+  border-radius: 5px;
+}
+label {
+  font-weight: 300;
+}
+.panel-login {
+  border: none;
+  -webkit-box-shadow: 0px 0px 49px 14px rgba(188,190,194,0.39);
+  -moz-box-shadow: 0px 0px 49px 14px rgba(188,190,194,0.39);
+  box-shadow: 0px 0px 49px 14px rgba(188,190,194,0.39);
+  }
+
+.panel-login>.panel-heading .tabs{
+  padding: 0;
+}
+.panel-login h2{
+  font-size: 20px;
+  font-weight: 300;
+  margin: 30px;
+}
+.panel-login>.panel-heading {
+  color: #848c9d;
+  background-color: #e8e9ec;
+  border-color: #fff;
+  text-align:center;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom: 0px;
+  padding: 0px 15px;
+}
+.panel-login .form-group {
+  padding: 0 30px;
+}
+
+.panel-login>.panel-heading .register {
+  padding: 20px 30px;
+  background: #4F2F4F;
+  border-bottom-right-radius: 5px;
+}
+.panel-login>.panel-heading a{
+  text-decoration: none;
+  color: #666;
+  font-weight: 300;
+  font-size: 16px;
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+.panel-login>.panel-heading a#register-form-link {
+  color: #fff;
+  width: 100%;
+  text-align: center;
+}
+
+.panel-login input[type="text"],.panel-login input[type="email"],.panel-login input[type="password"] {
+  height: 45px;
+  border: 0;
+  font-size: 16px;
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-bottom: 1px solid #e7e7e7;
+  border-radius: 0px;
+  padding: 6px 0px;
+}
+.panel-login input:hover,
+.panel-login input:focus {
+  outline:none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  border-color: #ccc;
+}
+
+.btn-register {
+  background-color: #E8E9EC;
+  outline: none;
+  color: #2D3B55;
+  font-size: 14px;
+  height: auto;
+  font-weight: normal;
+  padding: 14px 0;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 0px;
+  box-shadow: none;
+}
+.btn-register:hover,
+.btn-register:focus {
+  color: #fff;
+  background-color: #4F2F4F;
+}
+
+.navbar-brand{
+  padding-top: 30px;
+}
+
+.active img{
+  height: 30px;
+  width: 30px;
+  }
+
+.icon img {
+  height: 30px;
+  width: 30px;  
+}
+
+.icon img:hover {
+  animation-name: rotation;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 2.5s;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate3d(0, 1, 0, 0deg);
+  }
+  50% {
+    transform: rotate3d(0, 1, 0, 180deg);
+  }
+  100% {
+    transform: rotate3d(0, 1, 0, 360deg);
+  }
+}
+
+.LondonCab {
+  padding-top: 50px;
+}
+.abs-center-x {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+} 
+
+nav {
+  text-align: center;
+} 
+
+.container-fluid {
+  position: relative;
+  margin: 0px 150px 0px 150px;
+}
+
+.emailsent {
+  color: white;
+  text-align: center;
+  font-size: 15px;
+  font-family: 'Montserrat', sans-serif;
+  background: url(city_purple.jpg) 
+}
