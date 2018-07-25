@@ -2,6 +2,7 @@ from flask import Flask , render_template,request
 import requests
 import json
 import flask
+import os
 from sendemailapi import send_simple_message
 
 app = Flask("MyApp")
@@ -204,5 +205,6 @@ def read_signup_data():
 
 	return render_template ("emailsent.html")
 	
-
-app.run(debug=True)
+port = int(os.environ.get("PORT", 5000))
+app.run(host='0.0.0.0', port=port,debug=True)
+	
