@@ -36,6 +36,16 @@ def random_location_generator(location_selector):
 	return location_chosen
 
 @app.route("/send", methods=["POST"])
+def read_form_data():
+	form_data = request.form 
+	startcoord =  form_data["startcoord"]
+	endcoord =  form_data["endcoord"]
+	
+	res = calculate_distance(startcoord, endcoord)
+
+	return "Time to reach location: " + str(res) + " minutes"
+
+@app.route("/sendemail", methods=["POST"])
 def read_signup_data():
 	form_data = request.form #Getting hold of a Form object that is sent from a browser.
 	name =  form_data["username"] # from the form object get the Username
