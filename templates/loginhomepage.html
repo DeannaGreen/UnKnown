@@ -1,6 +1,5 @@
 {% include 'header.html' %}
 
-
 	<section id='section01' Class= 'demo'>
 		<a href="#section01"><span></span></a>
 		<div Class="UnKnownTitle">
@@ -60,10 +59,14 @@
     <p>Go Crazy and try out our random location selector below</p></br>
     <div id="locationgame" >
       <form method="post" action="/locgame"> <!-- need to add link to location game when submit is clicked on -->
-        <p>Locations: South Bank, Hyde Park, Tower Bridge, Canary Wharf, Leicester Square, Rooftops:</p></br>
-        <label for="text">Choose a location from the above:</label></form><br>
-        <input type="text" id="locationinput" name="londonlocation" required="required">
-        <input type="submit" value="Submit" id="locationsubmit"/>
+        <p>Choose a location from the above:</p></br>
+		<select name="loc_list" id="loc_list">
+		  <option value="{{Knownplaces[0]}}" selected>{{Knownplaces[0]}}</option>
+		  {% for place in Knownplaces[1:] %}
+		    <option value="{{place}}">{{place}}</option>
+		  {% endfor %}
+		</select>
+        <input type="submit" value="Submit" id="locationsubmit">
       </form>
     </div>
   </div>
