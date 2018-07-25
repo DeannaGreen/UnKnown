@@ -13,8 +13,14 @@
   <div class='polaroid-images'>
 
     <div class="row">
+        <div id="myModal{{resultindex}}" class="modal">
+          <span class="close" data-dismiss="modal">&times;</span>
+            <img class="modal-content" src="./Images/towerbridge.jpg" id="img01">
+          <div id="caption"></div>
+      </div>
+      
       <div class="col-md-4 col-sm-12">
-        <a  href="#myModal" title="{{result[0]}}" data-toggle="modal" ><img id="myImg" src="./static/Images/towerbridge.jpg" alt="{{result[0]}}" style="width:100%;max-width:300px"></a>
+        <a  href="#myModal{{resultindex}}" title="{{result[0]}}" data-toggle="modal" ><img id="myImg" src="./static/Images/towerbridge.jpg" alt="{{result[0]}}" style="width:100%;max-width:300px"></a>
 
       </div>
       <div class="col-md-6 col-sm-12">
